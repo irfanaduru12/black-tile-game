@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTIS 255 Project - Black Tile Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js"></script>
+
+    <div id="coverPage" class="screen active">
+      <h1>Black Tile Game</h1>
+
+      <div class="team-info">
+        <div class="member">
+          <p>Irfan Alper Duru</p>
+        </div>
+
+      </div>
+
+      <div class="tapToStart">Tap the screen to start</div>
+    </div>
+
+    <div id="countdownScreen" class="screen">
+      <div id="countdownDisplay">3</div>
+    </div>
+
+    <div id="gameScreen" class="screen">
+      <div class="header">
+        <div class="score-box">
+          <span class="label">HIGH-SCORE</span>
+          <span class="value" id="highScoreValue">0</span>
+        </div>
+        <div class="score-box">
+          <span class="label">SCORE</span>
+          <span class="value" id="scoreValue">0</span>
+        </div>
+        <div class="score-box">
+          <span class="label">TIME</span>
+          <span class="value" id="timeValue">10</span>
+        </div>
+      </div>
+
+      <div id="gameBoard" aria-label="Game Board"></div>
+
+      <div id="gameMessage">Tap the black tiles!</div>
+
+      <div class="footer">
+        <div class="barWrap"><div id="pointBar" class="bar"></div></div>
+      </div>
+
+      <div id="endOverlay">
+        <div id="resultText">Time is up!</div>
+        <div id="restartMsg">Press F5 key to play again</div>
+      </div>
+    </div>
+
+    <script src="proje.js"></script>
+  </body>
+</html>
